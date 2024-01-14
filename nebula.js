@@ -1,3 +1,6 @@
+// TODO add a way to automatically count img folder items and add to list of random choices
+// TODO integrate into webpage
+
 var points = []
 // The lower the multiplier the less random and more like stars streaking across the sky
 // Works better below .1 range
