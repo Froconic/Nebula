@@ -1,5 +1,7 @@
 // TODO add a way to automatically count img folder items and add to list of random choices
 // TODO integrate into webpage
+// TODO Create a way to dynamically look thru img folder and randomly select
+
 
 var points = []
 // The lower the multiplier the less random and more like stars streaking across the sky
@@ -33,7 +35,7 @@ var color, color2
 // }
 
 function preload() {
-  roll = Math.floor(random(0, 247))
+  roll = Math.floor(random(0, 248))
   console.log(roll)
   imgNumber = "img/" + roll + ".png"
   img = loadImage(imgNumber)
