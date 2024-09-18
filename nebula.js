@@ -1,8 +1,6 @@
 // TODO add a way to automatically count img folder items and add to list of random choices
 // TODO integrate into webpage
 // TODO Create a way to dynamically look thru img folder and randomly select
-
-
 var points = []
 // The lower the multiplier the less random and more like stars streaking across the sky
 // Works better below .1 range
@@ -27,16 +25,10 @@ var color, color2
 // Todo play with alpha range
 // TODO add a function to gENERate and choose a random background from the watercolor generator
 
-// source = '../img/'
-// stock = []
-// for(x = 0; x <= source.length; x++){
-//   stock.push(source[x])
-//   console.log(stock)
-// }
-
 function preload() {
-  roll = Math.floor(random(0, 248))
+  roll = Math.floor(random(0, 273))
   console.log(roll)
+  // roll = 274
   imgNumber = "img/" + roll + ".png"
   img = loadImage(imgNumber)
   }
@@ -63,7 +55,7 @@ function setup() {
   // color = random(colors)
   // color2 = random(colors2)
 
-  createCanvas(1900, 1050)
+  createCanvas(1910, 1070)
   h = hour()
   m = minute()
   s = second()
@@ -75,8 +67,8 @@ function setup() {
   // noiseDetail(1)
   angleMode(DEGREES)
   // With current hardware < 200 is better
-  var density = 999
-  var space = (width / density) * 1.3
+  var density = 1331
+  var space = (width / density) * 1.5
   size = random(1)
   // size = randomGaussian(1, 10)
   // size = noise(10)
